@@ -39,7 +39,7 @@ class User:
         if not account:
             print("Account does not exist.")
             return
-        if(Bankrupt_bank.initial_bank_balance<=amount):
+        if(Bankrupt_bank.initial_bank_balance>=amount):
             if account['balance'] >= amount:
                 account['balance'] -= amount
                 Bankrupt_bank.initial_bank_balance-=amount 
